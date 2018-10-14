@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News zing</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-family: sans-serif;
+            color: mediumblue;
+            background: greenyellow;
+        }
+        #menu ul {
+            list-style-type: none;
+            background: orange;
+            text-align: center;
+        }
+        #menu ul li {
+            display: inline-table;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            position: relative;
+        }
+        #menu ul li a{
+            text-decoration: none;
+            display: block;
+        }
+        #menu >ul >li >a:hover{
+            text-decoration: underline;
+            background: #FFFFFF;
+        }
+        #menu ul li .sub-menu{
+            display: none;
+            position: absolute;
+        }
+        #menu ul li:hover .sub-menu{
+            display: block;
+        }
+        #menu ul ul >li >a:hover {
+            color: red;
+            background: #FFFFFF;
+        }
+        #menu ul li .sub-menu >li >.sub-menu-1{
+            display: none;
+            position: absolute;
+            left: 120px;
+            top: 0px;
+        }
+        #menu ul li .sub-menu >li:hover .sub-menu-1{
+            display: block;
+
+        }
+    </style>
+</head>
+<body>
+<div id="menu">
+    <ul>
+        <li><a href="#">Thời sự</a>
+            <ul class="sub-menu">
+                <li><a href="#">Giao thông</a>
+                    <ul class="sub-menu-1">
+                        <li><a href="#">Giao thông 1</a></li>
+                        <li><a href="#">Đô thị 1</a></li>
+                        <li><a href="#">Đời sống 1</a></li>
+                        <li><a href="#">Quốc phòng 1</a></li>
+                        <li><a href="#">Ảnh & video 1</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Đô thị</a></li>
+                <li><a href="#">Đời sống</a></li>
+                <li><a href="#">Quốc phòng</a></li>
+                <li><a href="#">Ảnh & video</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">Thế giới</a>
+            <ul class="sub-menu">
+                <li><a href="#">Tư liệu</a></li>
+                <li><a href="#">Quân sự</a></li>
+                <li><a href="#">Phân tích</a></li>
+                <li><a href="#">Người Việt 4 phương</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">Kinh doanh</a>
+            <ul class="sub-menu">
+                <li><a href="#">Tài chính</a></li>
+                <li><a href="#">Chứng khoán</a></li>
+                <li><a href="#">Bất động sản</a></li>
+                <li><a href="#">Doanh nhân</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
